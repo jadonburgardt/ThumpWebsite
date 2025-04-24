@@ -54,13 +54,9 @@ section {
 }
 
 #features,
-#prototype,
-#team {
+#docs,
+#screens {
   background: #f5f8ff;
-}
-
-#docs {
-  background: white;
 }
 
 .button-container {
