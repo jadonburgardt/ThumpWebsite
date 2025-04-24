@@ -1,199 +1,241 @@
+<!-- This is a HTML page for the entire main page of the Thump app -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thump - Better School Management</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .nav-links a:hover {
+        background-color: lightblue;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thump - Better School Management</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    .nav-links a:hover {
-      background-color: lightblue;
+      .screens-carousel {
+        display: flex;
+        justify-content: center;
 
-    }
+        flex-wrap: wrap;
+      }
 
-    .screens-carousel {
-      display: flex;
-      justify-content: center;
+      .screens-carousel img {
+        width: 200px;
 
-      flex-wrap: wrap;
+        margin: 10px;
+        border: 1px solid #ccc;
+      }
 
-    }
+      .feature-card {
+        margin-bottom: 20px;
+      }
 
-    .screens-carousel img {
-      width: 200px;
+      .features-more {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+      }
 
-      margin: 10px;
-      border: 1px solid #ccc;
-    }
+      .screen-box {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+      }
 
-    .feature-card {
-      margin-bottom: 20px;
-    }
+      .screen-box h3 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
 
-    .features-more {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 10px;
-    }
+  <body>
+    <nav>
+      <div class="logo">Thump</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#docs">Documents</a>
+        <a href="#team">Team</a>
+      </div>
+    </nav>
 
-    .screen-box {
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-      border: 1px solid #ccc;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      cursor: pointer;
-
-    }
-
-    .screen-box h3 {
-      margin-top: 0;
-    }
-  </style>
-</head>
-
-<body>
-  <nav>
-    <div class="logo">Thump</div>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#features">Features</a>
-      <a href="#screens">Screens</a>
-      <a href="#prototype">Prototype</a>
-      <a href="#docs">Documents</a>
-      <a href="#team">Team</a>
-    </div>
-  </nav>
-
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Thump</h1>
-      <p class="tagline">The next generation of school management</p>
-      <p class="description">An improved version of Pulse, designed to make grade tracking and school management easier
-        than ever.
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Thump</h1>
+        <p class="tagline">The next generation of school management</p>
+        <p class="description">
+          An improved version of Pulse, designed to make grade tracking and
+          school management easier than ever.
+        </p>
+        <p>
+          To Design Thump, we began by identifying key pain points real people
+          faced in managing assignments, grades, and academics.
+        </p>
+        <p>
+          Through user interviews and more, we iteratively developed a Figma
+          Prototype based on our research.
+        </p>
+        We sketched multiple prototypes and refined them through hueristic
+        evaluations and usability testing.
+        <p>
+          These iterations led to this final mockup in Figma, which focuses on
+          clarity and efficiency.
+        </p>
+      </div>
+      <img
+        src="./images/undraw_my-app_15n4.svg"
+        alt="Thump App Preview"
+        class="hero-image"
+      />
+      <p>
+        {NOTE: This is a website to showcase a Figma design that was done for
+        SE350 (Software Engineering and Human Computer Interaction), this is not
+        an actual app}
       </p>
-      <p>To Design Thump, we began by identifying key pain points real people faced in managing assignments, grades, and academics.  </p>
-        <p>Through user interviews and more, we iteratively developed a Figma Prototype based on our research. </p>We sketched multiple prototypes and refined them
-        through hueristic evaluations and usability testing. <p>These iterations led to this final mockup in Figma, which focuses on clarity and efficiency. </p>
-    
-    </div>
-    <img src="undraw_my-app_15n4.svg" alt="Thump App Preview" class="hero-image">
-    <p>
-      {NOTE: This is a website to showcase a Figma design that was done for SE350 (Software Engineering and Human Computer Interaction), this is not an actual app}
-    </p>
-    <div class="button-container">
-      <a href="#features" class="how-it-works-btn">How it works</a>
-    </div>
-  </section>
+      <div class="button-container">
+        <a href="#features" class="how-it-works-btn">How it works</a>
+      </div>
+    </section>
 
-  
+    <section id="features">
+      <h2>Features of Thump</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <img src="./images/./grades.svg" alt="Grade Tracking" />
+          <h3>Grade Tracking</h3>
+          <p>Monitor your academic progress in real-time</p>
+        </div>
+        <div class="feature-card">
+          <img src="./images/./offline.svg" alt="Offline Content" />
+          <h3>Offline Access</h3>
+          <p>View your content without internet connection</p>
+        </div>
+        <div class="feature-card">
+          <img src="./images/./calendar.svg" alt="Calendar" />
+          <h3>Smart Calendar</h3>
+          <p>Stay organized with dynamic scheduling</p>
+        </div>
+        <div class="feature-card">
+          <img src="./images/./notify.svg" alt="Notifications" />
+          <h3>Smart Notifications</h3>
+          <p>Never miss important updates</p>
+        </div>
+      </div>
+      <p class="features-more">and more!</p>
+    </section>
 
-  <section id="features">
-    <h2>Features of Thump</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <img src="./grades.svg" alt="Grade Tracking">
-        <h3>Grade Tracking</h3>
-        <p>Monitor your academic progress in real-time</p>
+    <section id="features">
+      <h2>Initial Prototypes</h2>
+      <div class="features-grid">
+        <div class="feature-card-2">
+          <img src="./images/./proto2.png" alt="Grade Tracking" />
+          <h3>Initial Prototype</h3>
+          <p>Getting the right design</p>
+        </div>
+        <div class="feature-card-2">
+          <img src="./images/./proto1.png" alt="Offline Content" />
+          <h3>Offline Access</h3>
+          <p>Getting the design right</p>
+        </div>
       </div>
-      <div class="feature-card">
-        <img src="./offline.svg" alt="Offline Content">
-        <h3>Offline Access</h3>
-        <p>View your content without internet connection</p>
-      </div>
-      <div class="feature-card">
-        <img src="./calendar.svg" alt="Calendar">
-        <h3>Smart Calendar</h3>
-        <p>Stay organized with dynamic scheduling</p>
-      </div>
-      <div class="feature-card">
-        <img src="./notify.svg" alt="Notifications">
-        <h3>Smart Notifications</h3>
-        <p>Never miss important updates</p>
-      </div>
-    </div>
-    <p class="features-more">and more!</p>
-  </section>
+    </section>
 
-  <section id="screens">
-    <h2>App Screens</h2>
-    <div class="screens-grid">
-      <div class="screen-item">
-        <h3>Home</h3>
-        <img src="./image5.png" alt="Home Screen">
+    <section id="screens">
+      <h2>Final Prototype Screens</h2>
+      <div class="screens-grid">
+        <div class="screen-item">
+          <h3>Home</h3>
+          <img src="./images/./image5.png" alt="Home Screen" />
+        </div>
+        <div class="screen-item">
+          <h3>Settings</h3>
+          <img src="./images/./image6.png" alt="Settings Screen" />
+        </div>
+        <a href="courses.html" class="screen-item">
+          <h3>Courses</h3>
+          <img src="./images/./image7.png" alt="Courses Screen" />
+        </a>
+        <a href="grades.html" class="screen-item">
+          <h3>All Grades</h3>
+          <img src="./images/./image11.png" alt="Grades Screen" />
+        </a>
+        <a href="notifications.html" class="screen-item">
+          <h3>Notifications</h3>
+          <img src="./images/./image10.png" alt="Notifications Screen" />
+        </a>
+        <a href="calendar.html" class="screen-item">
+          <h3>Calendar</h3>
+          <img src="./images/./image8.png" alt="Calendar Screen" />
+        </a>
+        <div class="screen-item">
+          <h3>Important!</h3>
+          <img src="./images/./image9.png" alt="Important Screen" />
+        </div>
       </div>
-      <div class="screen-item">
-        <h3>Settings</h3>
-        <img src="./image6.png" alt="Settings Screen">
-      </div>
-      <a href="courses.html" class="screen-item">
-        <h3>Courses</h3>
-        <img src="./image7.png" alt="Courses Screen">
+    </section>
+
+    <section id="prototype">
+      <a
+        href="https://youtu.be/DyBVw__56cs"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="text-decoration: underline; color: #4a90e2"
+      >
+        <h2>Watch Prototype Demo</h2>
       </a>
-      <a href="grades.html" class="screen-item">
-        <h3>All Grades</h3>
-        <img src="./image11.png" alt="Grades Screen">
-      </a>
-      <a href="notifications.html" class="screen-item">
-        <h3>Notifications</h3>
-        <img src="./image10.png" alt="Notifications Screen">
-      </a>
-      <a href="calendar.html" class="screen-item">
-        <h3>Calendar</h3>
-        <img src="./image8.png" alt="Calendar Screen">
-      </a>
-      <div class="screen-item">
-        <h3>Important!</h3>
-        <img src="./image9.png" alt="Important Screen">
+    </section>
+
+    <section id="docs">
+      <h2>Project Documentation</h2>
+      <div class="docs-links">
+        <a
+          class="doc-button"
+          href="./images/./Final Report - SE350.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Part 2 Report: Getting the Right Design
+        </a>
+        <a
+          class="doc-button"
+          href="./images/./SE350 Part 3.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Part 3 Report: Getting the Design Right
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="prototype">
-    <a href="https://youtu.be/DyBVw__56cs" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #4A90E2;">
-      <h2>Watch Prototype Demo</h2>
-    </a>
-  </section>
-  
-  
-  
-  
+    <section id="team">
+      <h2>Our Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="./images/./person.png" alt="Team Member 1" />
+          <h3>Jadon Burgardt</h3>
 
-  <section id="docs">
-    <h2>Project Documentation</h2>
-    <div class="docs-links">
-      <a class="doc-button" href="./Final Report - SE350.pdf" target="_blank" rel="noopener noreferrer">
-        Part 2 Report: Getting the Right Design
-    </a>
-    <a class="doc-button" href="./SE350 Part 3.pdf" target="_blank" rel="noopener noreferrer">
-      Part 3 Report: Getting the Design Right
-  </a>
-      
-    </div>
-  </section>
+          <p>Created Part 2 & 3 Reports</p>
 
-  <section id="team">
-    <h2>Our Team</h2>
-    <div class="team-members">
-      <div class="team-member">
-        <img src="./person.png" alt="Team Member 1">
-        <h3>Jadon Burgardt</h3>
-        <h4>Software Engineering</h3>
-        <p>Designed Prototype and Created Website</p>
+          <p>Designed The Figma Prototypes</p>
+
+          <p>Created Thump Website</p>
+        </div>
       </div>
-      
-    </div>
-  </section>
+    </section>
 
-  <footer>
-  </footer>
+    <footer></footer>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

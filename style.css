@@ -1,3 +1,4 @@
+/* CSS STYLES FOR ALL PAGES */
 * {
   margin: 0;
   padding: 0;
@@ -93,61 +94,19 @@ section {
   justify-items: center;
 }
 
-/* .screen-item {
-  width: 300px;
-  height: 675px;
-  padding: 1rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
-  background: white;
+.screen-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.screen-item img {
-  width: 300px;
-  height: 675px;
-  object-fit: cover;
-  border-radius: 30px;
 }
 
 .screen-item h3 {
   margin: 1rem 0;
   color: #333;
-  font-size: 1.25rem;
-} */
-
-/* .screen-item {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    transition: transform 0.3s ease;
 }
-
-
-
-.screen-item img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.screen-item h3 {
-    margin: 1rem 0;
-    color: #333;
-} */
-
-.screen-item:hover {
+*/ .screen-item:hover {
   transform: translateY(-10px);
 }
 
@@ -250,12 +209,12 @@ section {
   margin-top: 2rem;
 }
 
-/* .feature-card {
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-} */
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
 .feature-card {
   width: 350px;
@@ -277,13 +236,35 @@ section {
   transform: translateY(-5px);
 }
 
-/* .feature-card img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-} */
-
 .feature-card img {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.feature-card-2 {
+  width: 500px;
+  height: 650px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background: white;
+  text-align: center;
+}
+
+.feature-card-2:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card-2 img {
   width: 350px;
   height: 500px;
   object-fit: cover;
